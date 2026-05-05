@@ -1,0 +1,72 @@
+{
+  "name": "phaser-pog",
+  "version": "0.2.0",
+  "description": "POG (Performance Of Game) — live debug overlay for Phaser 3 and Phaser 4 games. Single-player perf debugging + opt-in multiplayer netcode telemetry.",
+  "keywords": [
+    "phaser",
+    "phaser3",
+    "phaser4",
+    "phaser-plugin",
+    "debug",
+    "devtools",
+    "performance",
+    "perf",
+    "fps",
+    "gamedev",
+    "multiplayer",
+    "netcode",
+    "colyseus",
+    "websocket",
+    "culling",
+    "telemetry",
+    "overlay"
+  ],
+  "license": "MIT",
+  "author": "cx-mikem",
+  "homepage": "https://github.com/cx-mikem/pog-performance-of-game#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cx-mikem/pog-performance-of-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cx-mikem/pog-performance-of-game/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build"
+  },
+  "peerDependencies": {
+    "phaser": ">=3.60.0 <5.0.0"
+  },
+  "devDependencies": {
+    "phaser": "^4.1.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
