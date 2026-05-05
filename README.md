@@ -40,6 +40,8 @@ new Phaser.Game(config);
 
 Press `` ` `` to toggle. Open with `?pog=1` in the URL to start visible.
 
+> 📚 Full documentation lives in [`docs/`](./docs/README.md): [getting started](./docs/getting-started.md), [options](./docs/options.md), [inspectors](./docs/inspectors.md), [network adapters](./docs/adapters.md), [session export](./docs/session-export.md), [production builds](./docs/production.md), [architecture](./docs/architecture.md), [FAQ](./docs/faq.md).
+
 ## Standalone (single-player) mode
 
 Out of the box you get per-scene FPS, frame time, sprite count, zoom, GPU renderer, and draw calls (when instrumented). No networking required — every adapter is opt-in.
